@@ -1,0 +1,206 @@
+section {
+  padding: 60px;
+}
+
+.work_content {
+  width: 58%;
+}
+
+.work-img-btn {
+  width: 20px;
+  margin-left: 12px;
+}
+
+.borrow-list-section {
+  /* padding: 50px 0; */
+}
+
+.borrow-list-container {
+  margin: 32px 0;
+  padding-left: 0;
+  font-size: 1.1em;
+}
+
+.borrow-list-container li {
+  font-size: 1em;
+  list-style: none;
+  margin-bottom: 8px;
+  padding-left: 25px;
+  position: relative;
+}
+
+.borrow-list-container li:before {
+  content: "";
+  width: 16px;
+  height: 8px;
+  border-left: 2px solid #000;
+  border-bottom: 2px solid #000;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 0px;
+  top: 8px;
+}
+
+.hire-section {
+  background-image: url(/footerbg.jpg);
+  /* padding: 50px 0; */
+}
+
+.hire-section .hire-content h2 {
+  font-size: 3em;
+  margin-bottom: 0.6em;
+}
+
+.hire-section .hire-card {
+  padding: 23px 19px 19px;
+  background-color: var(--color-light-grey);
+  margin-bottom: 10px;
+  border-radius: 10px;
+  /* margin: 0px 10px; */
+}
+
+.hire-section .hire-card h3 {
+  color: var(--color-dark);
+  font-family: Kameron, serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0.5em 0;
+}
+
+.hire-section .hire-card p {
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
+}
+.hire-section .hire-card li {
+  font-size: 0.8em;
+  margin-bottom: 0.8em;
+  list-style-position: inside;
+}
+
+.hire-card-img-box {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0.5rem 0;
+  width: 100%;
+}
+
+.hire-card a {
+  color: var(--color-accent);
+  text-decoration: underline;
+  margin: 0 5px;
+  font-weight: 600;
+}
+
+.hire-card-img-box img {
+  width: 3em;
+}
+
+.economy-share-section {
+
+  /* padding: 80px 0;
+  height: 70vh; */
+}
+
+.share-your-stuff-section {
+  background: var(--color-light-grey);
+}
+
+.share-your-stuff-section .stuff-img-container {
+  height: 100%;
+  text-align: center;
+}
+
+.share-your-stuff-section .stuff-img-container img {
+  height: 100%;
+  width: 52%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ready-to-borrow-seaction {
+  background-color: var(--color-dark);
+}
+
+
+@media screen and (max-width: 1400px) {
+  .hire-section .hire-content h2 {
+    font-size: 2em;
+  }
+  .borrow-list-container li{
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:1366px) and (min-width: 1200px){
+  section.how-it-work-page.blog-banner.hero_section ,.borrow-list-section, .economy-share-section {
+    padding-left: 111px;
+}
+
+
+}
+@media screen and (max-width: 1199px) {
+  section {
+    padding: 60px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .hire-section {
+    padding: 60px 0;
+  }
+
+  .hire-section .hire-card {
+    text-align: center;
+    height: 100%;
+  }
+
+  .hire-section .hire-card {
+    text-align: center;
+  }
+
+  .section-head h2 {
+    font-size: 32px;
+  }
+
+  .hire-section .hire-content h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+  }
+
+  section.how-it-work .download-container {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hire-section .hire-card {
+    text-align: center;
+    height: 100%;
+  }
+  .how-it-work-page.blog-banner {
+    height: 370px;
+}
+  section.how-it-work .download-container {
+    display: block;
+    text-align: center;
+  }
+
+  .share-your-stuff-section .about-share-content {
+    text-align: center;
+  }
+
+  .economy-share-section .img-container,
+  .borrow-list-img-container {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .hire-section .hire-content h2 {
+    font-size: 22px;
+  }
+  .borrow-list-container li {
+    font-size: 14px;
+  }
+}

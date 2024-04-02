@@ -1,0 +1,200 @@
+.about-marketing-section {
+  padding: 60px 0;
+  background: #f5f5f5;
+}
+
+.about-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.about-content p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.about-content {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.earning-content .theme-btn {
+  gap: 18px;
+}
+
+.founder-section {
+  padding: 60px 0;
+  background: #33384f;
+}
+
+.about-share-content p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.our-team-content {
+  padding: 3em 0;
+}
+
+.our-team-card {
+  padding: 30px 15px 15px;
+  background-color: var(--color-light-grey);
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 10px;
+  height: 20em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.our-team-card h3 {
+  font-weight: 700;
+  color: var(--color--dark);
+  font-family: Kameron, serif;
+  font-size: 1.3em;
+  line-height: 1.12em;
+  background-color: var(--color-light-grey);
+}
+
+.readmore-btn {
+  border: none !important;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  text-decoration: underline;
+  padding: 0;
+}
+
+.our-team-card p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.our-team-card p:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
+.blog-text-content h5 {
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  height: 40px;
+  margin: 0.5em 0;
+  font-size: 16px;
+}
+
+.blog-text-content p {
+  font-size: 16px;
+}
+
+.about-share-section {
+  background-image: url(/footerbg.jpg);
+  padding: 80px 0;
+}
+
+.content-bio {
+  max-width: 1008px;
+  margin: 0 auto;
+  padding: 50px 0 0;
+}
+
+.founder-bio-image {
+  max-width: 800px;
+  margin: 0 auto;
+  height: 520px;
+}
+.blog_banner_image{
+  height: 100%;
+  width: 100%;
+}
+section.founder-bio {
+  padding: 50px 15px;
+}
+
+/* .founder-bio-image img {
+  height: 100%;
+  width: 100%;
+} */
+
+.content-bio h3 {
+  font-size: 1.8em;
+}
+.content-bio h2 {
+  font-size: 3.8em;
+}
+
+.founder-bio-container{
+  /* max-width: 1300px; */
+  margin: 0 auto;
+  height: 600px;
+  position: relative;
+  
+}
+.founder-bio-container .image-container{
+  height: 100%;
+  width: 100%;
+  
+}
+.founder-bio-container  img {
+  width: 100%;
+  height: 100% !important;
+}
+.founder-bio-container .content-bio{
+  position: absolute;
+  left: 146px;
+  top: 383px;
+
+}
+.blog_btn{
+  position: absolute;
+  z-index: 999;
+}
+@media screen and (max-width: 1400px) {
+  .content-bio h3 {
+    font-size: 24px;
+}
+.our-team-card h3{
+  font-size:18px;
+}
+}
+@media screen and (max-width: 1199px) {
+  .about-share-section {
+    padding: 50px 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .about-share-section {
+    padding: 20px 0 50px;
+  }
+  .img-container img {
+    max-width: 450px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .founder-bio {
+    padding-bottom: 30px;
+  }
+  .content-bio h3 {
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 576px) {
+
+  .content-bio h3 {
+    font-size: 18px;
+}
+.our-team-card h3 {
+  font-size: 16px;
+}
+  .red-link p ,.about-content p,.our-team-card p{
+    font-size: 14px;
+}
+.about-share-content p{
+  font-size: 14px;
+}
+}
