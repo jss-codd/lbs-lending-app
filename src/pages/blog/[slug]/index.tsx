@@ -2,19 +2,19 @@ import Instance from "@/utils/axios";
 import BlogOverview from "@/components/BlogOverview";
 import { Metadata } from "next";
 
-
-async function getBlog(blogId: string) {
-  const { data, status } = await Instance.get(`/blogs/${blogId}`);
-  return data;
-}
-
-export default async function Blog({ params: { slug } }: any) {
-  const data = await getBlog(slug);
+export default function Blog({ blog }: any) {
   return (
     <main>
-      <BlogOverview blog={data} />
+      <BlogOverview blog={blog} />
     </main>
   );
+}
+
+export async function getStaticPaths() {
+  return {
+    paths: [],
+    fallback: "blocking",
+  };
 }
 
 // export async function generateStaticParams() {
@@ -43,3 +43,24 @@ export default async function Blog({ params: { slug } }: any) {
 //     keywords: data?.category?.split(","),
 //   };
 // }
+
+export const getStaticProps = async ({ params: { slug } }: any) => {
+  try {
+    const { data, status } = await Instance.get(`/blogs/${slug}`);
+    if (!data) {
+      return {
+        notFound: true,
+      };
+    }
+    let blog = data || {};
+    return {
+      props: {
+        blog,
+      },
+    };
+  } catch (error) {
+    return {
+      notFound: true,
+    };
+  }
+};

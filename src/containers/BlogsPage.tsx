@@ -9,8 +9,9 @@ import Link from "next/link";
 import parser from "html-react-parser";
 import { howItWorksProcedures, categories } from "@/assets/marketSelectionData";
 
-export default function BlogsPage() {
-  const [blogsData, setBlogsData] = useState<any>([]);
+export default function BlogsPage({blogs}:any) {
+
+  const [blogsData, setBlogsData] = useState<any>(blogs);
   // const getBlogs = async () => {
   //   let searchQuery = `offset=${0}&limit=${10}`;
   //   try {
@@ -56,7 +57,7 @@ export default function BlogsPage() {
           <section className="blog-list">
             <div className="container">
               <div className="row">
-                {/* {blogsData.length > 0 &&
+                {blogsData.length > 0 &&
                   blogsData.map((blog: { id: string }) => (
                     <div className="col-md-4" key={blog.id}>
                       <BlogCard
@@ -64,7 +65,7 @@ export default function BlogsPage() {
                         key={blog.id}
                       />
                     </div>
-                  ))} */}
+                  ))}
               </div>
             </div>
           </section>

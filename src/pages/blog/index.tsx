@@ -1,4 +1,6 @@
 import BlogsPage from "@/containers/BlogsPage";
+import Instance from "@/utils/axios";
+
 // import { Metadata } from "next";
 
 // export const metadata: Metadata = {
@@ -34,12 +36,32 @@ import { Metadata } from "next";
 //   keywords: ['rental', 'rent', 'borrow'],
 // };
 
-
-
-export default function Blogs() {
+export default function Blogs(props: { blogs: {} }) {
+  const { blogs } = props;
   return (
     <main>
-      <BlogsPage />
+      <BlogsPage blogs={blogs} />
     </main>
   );
 }
+
+export const getServerSideProps = async () => {
+  try {
+    let searchQuery = `offset=${0}&limit=${10}`;
+    const { data, status } = await Instance.get(`/blogs?${searchQuery}`);
+    if (!data?.data) {
+      return {
+        notFound: true,
+      };
+    }
+    let blogs = data?.data || {};
+    return {
+      props: { blogs },
+    };
+  } catch (e) {
+    return {
+      notFound: true,
+      props: {},
+    };
+  }
+};
