@@ -64,7 +64,7 @@ export default function NavBar() {
             <ul>
               <li>
                 <a
-                  className="theme-btn btn download-btn"
+                  className="theme-btn download-btn"
                   href={`${process.env.NEXT_PUBLIC_APP_ANDROID_APK}`}
                 >
                   Download App

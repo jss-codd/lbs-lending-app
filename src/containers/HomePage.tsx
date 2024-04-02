@@ -31,7 +31,7 @@ export default function HomePage() {
     <>
       <main className="main">
         <section className="topbar">
-          <div className=" container my_container ">
+          <div className="container my_container">
             <div className="row g-4">
               <div className="col-md-6  col-12">
                 <div className="row g-2">

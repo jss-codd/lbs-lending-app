@@ -22,7 +22,7 @@ section.hire-section.what-to-do{
 
 .lender-page .marketing_footer-seaction .dark_btn {
   background: var(--color-bg-light);
-  color: var(--color-dark);
+  color: var(--color-dark) !important;
 }
 
 .lender-content {

@@ -53,12 +53,12 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     // <body>
-      <GlobalErrorContext.Provider value={{ errorState, errorDispatch }}>
-        <NavBar />
-        <Component {...pageProps} />;
-        <Footer />
-        <LBSSnackBar timeout={5000} />
-      </GlobalErrorContext.Provider>
+    <GlobalErrorContext.Provider value={{ errorState, errorDispatch }}>
+      <NavBar />
+      <Component {...pageProps} />
+      <Footer />
+      <LBSSnackBar timeout={5000} />
+    </GlobalErrorContext.Provider>
     // </body>
   );
 }

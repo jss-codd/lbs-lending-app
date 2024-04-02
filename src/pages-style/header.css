@@ -28,7 +28,7 @@ header {
 
 .navbar-nav li a {
   font-weight: 600;
-  color: var(--color-white);
+  color: var(--color-white) !important;
   font-size: 18px;
   text-transform: capitalize;
   padding: 0 1.5em !important;
@@ -42,16 +42,6 @@ header {
 
 .navbar-nav li.active a {
   color: var(--color-bg-light);
-}
-
-.download-btn {
-  background: var(--color-bg-light);
-  padding: 10px 25px;
-  font-size: 18px;
-  font-weight: 600;
-  color: #33384f;
-  outline: none;
-  box-shadow: none;
 }
 
 .download-btn:active,

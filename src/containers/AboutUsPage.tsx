@@ -228,7 +228,7 @@ export default function AboutUsPage() {
                           window.scrollTo(0, 0);
                           setIsBioOpen(true);
                         }}
-                        className="theme-btn btn download-btn"
+                        className="theme-btn download-btn"
                       >
                         Read More: Full Bio
                       </button>

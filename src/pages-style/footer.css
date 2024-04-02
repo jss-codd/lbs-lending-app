@@ -108,8 +108,8 @@
 .subscribe-email .subscribe_button {
   border: none;
   position: absolute;
-  right: 7px;
-  top: 6px;
+  right: 5px;
+  top: 12px;
   background: transparent;
   width: 22px;
   padding: 0;

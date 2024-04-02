@@ -1,10 +1,11 @@
 import axios from 'axios'
 
 const Instance = axios?.create({
-  baseURL: process.env.NEXT_PUBLIC_APP_BASE_URL,
+  baseURL: "https://dev.littlebigsocial.com",
   timeout: 18000,
 })
 
+console.log(process.env.NEXT_PUBLIC_APP_BASE_URL,"process.env.NEXT_PUBLIC_APP_BASE_URL")
 Instance.interceptors.request.use(async req => {
   var token:any = ""
   if (typeof window !== 'undefined') {

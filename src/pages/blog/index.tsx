@@ -49,6 +49,8 @@ export const getServerSideProps = async () => {
   try {
     let searchQuery = `offset=${0}&limit=${10}`;
     const { data, status } = await Instance.get(`/blogs?${searchQuery}`);
+
+    console.log(data,"datadatadatadatadatadatadata")
     if (!data?.data) {
       return {
         notFound: true,
@@ -59,6 +61,7 @@ export const getServerSideProps = async () => {
       props: { blogs },
     };
   } catch (e) {
+    console.log(e,"this is the rrr")
     return {
       notFound: true,
       props: {},
